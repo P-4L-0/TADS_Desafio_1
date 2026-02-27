@@ -1,0 +1,11 @@
+C:\Users\crakb\source\repos\Desafio1\bin\Debug\Desafio1.exe.config
+C:\Users\crakb\source\repos\Desafio1\bin\Debug\Desafio1.exe
+C:\Users\crakb\source\repos\Desafio1\bin\Debug\Desafio1.pdb
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.csproj.AssemblyReference.cache
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.Form1.resources
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.Properties.Resources.resources
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.csproj.GenerateResource.cache
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.csproj.CoreCompileInputs.cache
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.exe
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.pdb
+C:\Users\crakb\source\repos\Desafio1\obj\Debug\Desafio1.exe.config
