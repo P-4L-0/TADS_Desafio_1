@@ -11,12 +11,11 @@ namespace Desafio1
 		public Cola colaPedidos;
 		public bool disponible;
 		Pedido pedidoActual;
-		Timer timerCocinero; //IA
-		ListBox lstCola; //IA
+		Timer timerCocinero;
+		ListBox lstCola;
 		Panel estadoPanel; 
 		
-
-
+		// constructor
 		public Cocinero(int numero, string nombre, string especialidad, ListBox lstCola, Panel panel)
 		{
 			disponible = true;
@@ -28,7 +27,10 @@ namespace Desafio1
 			timerCocinero = new Timer();
 			this.estadoPanel = panel;
 			this.estadoPanel.Paint += DibujarEstado;
+			// reinicia el panel
 			this.estadoPanel.Invalidate();
+
+			// evento timer
 			this.timerCocinero.Tick += FinalizarPedido;
 		}
 
@@ -68,15 +70,16 @@ namespace Desafio1
 			}
 		}
 
+		// dibuja el circulo de color en el panel
 		private void DibujarEstado(object sender, PaintEventArgs e)
 		{
 			Graphics g = e.Graphics;
 			
-			Brush colorCirculo = Brushes.Green; // Disponible
+			Brush colorCirculo = Brushes.Green; // disponible
 
 			if (!this.disponible)
 			{
-				colorCirculo = Brushes.Red; // Preparando
+				colorCirculo = Brushes.Red; // preparando
 			}
 
 			g.FillEllipse(colorCirculo, 1, 1, 12, 12);

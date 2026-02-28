@@ -180,7 +180,7 @@
 			// 
 			// splitContainer1
 			// 
-			this.splitContainer1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+			this.splitContainer1.Cursor = System.Windows.Forms.Cursors.Default;
 			this.splitContainer1.ImeMode = System.Windows.Forms.ImeMode.Disable;
 			this.splitContainer1.Location = new System.Drawing.Point(12, 12);
 			this.splitContainer1.Name = "splitContainer1";
