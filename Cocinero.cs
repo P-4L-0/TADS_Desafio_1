@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Desafio1
@@ -13,6 +14,7 @@ namespace Desafio1
 		Timer timerCocinero; //IA
 		ListBox lstCola; //IA
 		Panel estadoPanel; 
+		
 
 
 		public Cocinero(int numero, string nombre, string especialidad, ListBox lstCola, Panel panel)
@@ -25,7 +27,8 @@ namespace Desafio1
 			this.lstCola = lstCola;
 			timerCocinero = new Timer();
 			this.estadoPanel = panel;
-			this.estadoPanel.BackColor = System.Drawing.Color.Green;
+			this.estadoPanel.Paint += DibujarEstado;
+			this.estadoPanel.Invalidate();
 			this.timerCocinero.Tick += FinalizarPedido;
 		}
 
@@ -33,25 +36,25 @@ namespace Desafio1
 		{
 			NodoCola nodo = new NodoCola(pedido);
 			this.colaPedidos.Encolar(nodo);
-			colaPedidos.VerContenido(this.lstCola);
+			this.colaPedidos.VerContenido(this.lstCola);
 		}
 
 		public void PrepararPedido()
 		{
-			this.estadoPanel.BackColor = System.Drawing.Color.Yellow;
 			this.pedidoActual = colaPedidos.Desencolar().pedido;
 			this.disponible = false;
+			this.estadoPanel.Invalidate();
 			this.timerCocinero.Interval = pedidoActual.tiempoEstimado * 1000;
 			this.timerCocinero.Start();
 		}
 
 		public void FinalizarPedido(object sender, EventArgs e)
 		{
-			this.estadoPanel.BackColor = System.Drawing.Color.Green;
 			this.timerCocinero.Stop();
-			this.lstCola.Items.RemoveAt(0);
+			this.colaPedidos.VerContenido(this.lstCola);
 			this.disponible = true;
-			
+			this.estadoPanel.Invalidate();
+
 			Form1 formulario = (Form1)Application.OpenForms["Form1"];
 
 			if (formulario != null && this.pedidoActual != null)
@@ -63,6 +66,21 @@ namespace Desafio1
 			{
 				this.PrepararPedido();
 			}
+		}
+
+		private void DibujarEstado(object sender, PaintEventArgs e)
+		{
+			Graphics g = e.Graphics;
+			
+			Brush colorCirculo = Brushes.Green; // Disponible
+
+			if (!this.disponible)
+			{
+				colorCirculo = Brushes.Red; // Preparando
+			}
+
+			g.FillEllipse(colorCirculo, 1, 1, 12, 12);
+			g.DrawEllipse(Pens.Black, 1, 1, 12, 12);
 		}
 
 

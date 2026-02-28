@@ -15,6 +15,7 @@ namespace Desafio1
 		Cocinero[] cocineros = new Cocinero[4];
 		Random rndm = new Random();
 		public ListaPedidosListos pedidosTerminados = new ListaPedidosListos();
+		int cantPedidos = 0;
 
 		//int[] tiempos = new int[];
 
@@ -104,6 +105,13 @@ namespace Desafio1
 			cocineros[3] = new Cocinero(4, "Jorge", "Parrilla", listBox4, panel4);
 		}
 
+		private void button3_Click(object sender, EventArgs e)
+		{
+			textBox1.Clear();
+			textBox2.Clear();
+			comboBox1.SelectedIndex = -1;
+			textBox1.Focus();
+		}
 
 		public void ActualizarGrid()
 		{
@@ -116,7 +124,12 @@ namespace Desafio1
 			dataGridView1.Columns.Clear();
 			dataGridView1.DataSource = null;
 			dataGridView1.DataSource = pedidosTerminados.VerListos();
+			this.cantPedidos++;
+			lblCant.Text = this.cantPedidos.ToString();
 		}
 
+
+
+	
 	}
 }
