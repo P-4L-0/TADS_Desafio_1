@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Desafio1
 {
@@ -20,7 +17,7 @@ namespace Desafio1
 
 		public int TotNodos()
 		{
-			return this.totnodos; 
+			return this.totnodos;
 		}
 
 		public bool EstaVacia()
@@ -34,23 +31,16 @@ namespace Desafio1
 		}
 
 
-		public void VerContenido()
+		public void VerContenido(System.Windows.Forms.ListBox lstBox)
 		{
-			NodoCola aux; 
-			if(EstaVacia())
+			lstBox.Items.Clear(); 
+
+			NodoCola puntero = primero; 
+
+			while (puntero != null)
 			{
-				Console.WriteLine("La cola esta vacia, no tiene nodos");
-			}
-			else
-			{
-				Console.Write("Primero");
-				aux = primero; 
-				do
-				{
-					Console.Write("<- {0}", aux.pedido);
-					aux = aux.siguiente; 
-				}while(aux != null);
-				Console.WriteLine("<- Ultimo"); 
+				lstBox.Items.Add(puntero.pedido.descripcion);
+				puntero = puntero.siguiente;
 			}
 		}
 
@@ -59,12 +49,12 @@ namespace Desafio1
 		{
 			if (EstaVacia())
 			{
-				primero = ultimo = nodo; 
+				primero = ultimo = nodo;
 			}
 			else
 			{
 				ultimo.siguiente = nodo;
-				ultimo = nodo; 
+				ultimo = nodo;
 			}
 			totnodos++;
 		}
@@ -78,7 +68,7 @@ namespace Desafio1
 				primero = primero.siguiente;
 				totnodos--;
 			}
-			return aux; 
+			return aux;
 		}
 	}
 }

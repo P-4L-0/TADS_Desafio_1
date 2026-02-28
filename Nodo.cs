@@ -1,14 +1,13 @@
 ﻿namespace Desafio1
 {
-	class Nodo
+	public class Nodo
 	{
-		public int pedido;
-
+		public Pedido pedido;
 		public Nodo siguiente;
 
-		public Nodo(int valor)
+		public Nodo(Pedido pedido)
 		{
-			pedido = valor;
+			this.pedido = pedido;
 			siguiente = null;
 		}
 	}

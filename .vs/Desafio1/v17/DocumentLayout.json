@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\crakb\\source\\repos\\Desafio1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|c:\\users\\crakb\\source\\repos\\desafio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|c:\\users\\crakb\\source\\repos\\desafio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\listapedidoslistos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:listapedidoslistos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\cocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:cocinero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\nodocola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:nodocola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|C:\\Users\\crakb\\source\\repos\\Desafio1\\cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{976E6CD9-EE06-400F-AE11-87F5602A6798}|Desafio1.csproj|solutionrelative:cola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,15 +102,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Nodo.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Nodo.cs",
+              "RelativeDocumentMoniker": "Nodo.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Nodo.cs",
+              "RelativeToolTip": "Nodo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T23:07:26.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaPedidosListos.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\ListaPedidosListos.cs",
+              "RelativeDocumentMoniker": "ListaPedidosListos.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\ListaPedidosListos.cs",
+              "RelativeToolTip": "ListaPedidosListos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T23:07:14.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T01:31:52.703Z",
+              "WhenOpened": "2026-02-27T21:05:44.422Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NodoCola.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\NodoCola.cs",
+              "RelativeDocumentMoniker": "NodoCola.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\NodoCola.cs",
+              "RelativeToolTip": "NodoCola.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T21:01:08.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cola.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Cola.cs",
+              "RelativeDocumentMoniker": "Cola.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Cola.cs",
+              "RelativeToolTip": "Cola.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAIwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T21:00:31.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Pedido.cs",
+              "RelativeDocumentMoniker": "Pedido.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Pedido.cs",
+              "RelativeToolTip": "Pedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T20:59:07.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cocinero.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Cocinero.cs",
+              "RelativeDocumentMoniker": "Cocinero.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Cocinero.cs",
+              "RelativeToolTip": "Cocinero.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwC8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T20:58:49.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\crakb\\source\\repos\\Desafio1\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAiwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T02:48:54.464Z",
+              "EditorCaption": ""
             }
           ]
         },

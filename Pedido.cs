@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Desafio1
 {
-	internal class Pedido
+	public class Pedido
 	{
-		string cliente, descripcion, prioridad;
-		DateTime horaPedido;
-		int tiempoEstimado;
+		public string cliente { get; set; }
+		public string descripcion { get; set; }
+		public string prioridad { get; set; }
+		public DateTime horaPedido { get; set; }
+		public int tiempoEstimado { get; set; }
 
 		public Pedido(string cliente, string descripcion,
 			string prioridad, DateTime horaPedido, int tiempoEstimado)

@@ -2,7 +2,7 @@
 
 namespace Desafio1
 {
-	class ListaPedidosListos
+	public class ListaPedidosListos
 	{
 		Nodo inicio;
 		int totalnodos;
@@ -13,10 +13,7 @@ namespace Desafio1
 			totalnodos = 0;
 		}
 
-		public int TotalNodos()
-		{
-			return totalnodos;
-		}
+		public int TotalNodos() { return totalnodos; }
 
 		public void Mostrar()
 		{
@@ -25,7 +22,7 @@ namespace Desafio1
 			else
 			{
 				Nodo puntero = inicio;
-				int tmp = 1; 
+				int tmp = 1;
 				while (puntero != null)
 				{
 					Console.Write("{0}:{1} -> \t", tmp, puntero.pedido);
@@ -36,7 +33,7 @@ namespace Desafio1
 			Console.WriteLine();
 		}
 
-		public void InsertarI(int item)
+		public void InsertarI(Pedido item)
 		{
 			Nodo puntero;
 			Nodo auxiliar = new Nodo(item);
@@ -53,7 +50,7 @@ namespace Desafio1
 			this.totalnodos++;
 		}
 
-		public void InsertarF(int item)
+		public void InsertarF(Pedido item)
 		{
 			Nodo auxiliar = new Nodo(item);
 			if (inicio == null) inicio = auxiliar;
@@ -71,7 +68,7 @@ namespace Desafio1
 			this.totalnodos++;
 		}
 
-		public void InsertarP(int item, int pos)
+		public void InsertarP(Pedido item, int pos)
 		{
 			Nodo auiliar = new Nodo(item);
 			if (inicio == null)
@@ -94,7 +91,7 @@ namespace Desafio1
 					for (int i = 1; i < pos - 1; i++)
 					{
 						puntero = puntero.siguiente;
-						if (puntero.siguiente == null) break;									
+						if (puntero.siguiente == null) break;
 					}
 
 					Nodo punteronext;
@@ -158,7 +155,6 @@ namespace Desafio1
 				nodoPos = inicio;
 				nodoAnt = null;
 
-
 				for (i = 1; i < pos; i++)
 				{
 					nodoAnt = nodoPos;
@@ -167,11 +163,10 @@ namespace Desafio1
 
 				nodoE = nodoPos;
 
-				if (pos == 1) inicio = null;
+				if (pos == 1)
+					inicio = inicio.siguiente; 
 				else
-				{
-					nodoAnt.siguiente = nodoPos.siguiente.siguiente;
-				}
+					nodoAnt.siguiente = nodoPos.siguiente;
 
 				totalnodos--;
 				return nodoE;
@@ -195,6 +190,22 @@ namespace Desafio1
 			}
 
 			return null;
+		}
+
+		public Pedido[] VerListos()
+		{
+			Pedido[] pedidos = new Pedido[this.totalnodos];
+			Nodo puntero = inicio;
+			int i = 0;
+
+			while (puntero != null)
+			{
+				pedidos[i] = puntero.pedido;
+				puntero = puntero.siguiente;
+				i++;
+			}
+
+			return pedidos;
 		}
 
 	}
